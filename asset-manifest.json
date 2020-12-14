@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/brabbitturns26/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/brabbitturns26/static/js/main.836d7402.chunk.js",
+    "main.js.map": "/brabbitturns26/static/js/main.836d7402.chunk.js.map",
+    "runtime-main.js": "/brabbitturns26/static/js/runtime-main.c7639422.js",
+    "runtime-main.js.map": "/brabbitturns26/static/js/runtime-main.c7639422.js.map",
+    "static/js/2.9f29c96b.chunk.js": "/brabbitturns26/static/js/2.9f29c96b.chunk.js",
+    "static/js/2.9f29c96b.chunk.js.map": "/brabbitturns26/static/js/2.9f29c96b.chunk.js.map",
+    "static/js/3.d0e51bcc.chunk.js": "/brabbitturns26/static/js/3.d0e51bcc.chunk.js",
+    "static/js/3.d0e51bcc.chunk.js.map": "/brabbitturns26/static/js/3.d0e51bcc.chunk.js.map",
+    "index.html": "/brabbitturns26/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/brabbitturns26/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.9f29c96b.chunk.js.LICENSE.txt": "/brabbitturns26/static/js/2.9f29c96b.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/brabbitturns26/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c7639422.js",
+    "static/js/2.9f29c96b.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.836d7402.chunk.js"
+  ]
+}
