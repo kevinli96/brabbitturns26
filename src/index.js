@@ -1,3 +1,5 @@
+import './fonts/Poppins-Regular.ttf'
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

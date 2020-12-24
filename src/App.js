@@ -1,16 +1,21 @@
-import logo from './logo.svg';
+import About from './components/About/index';
+import AppHeader from './components/AppHeader/index';
+import Home from './components/Home/index';
 import './App.css';
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Happy birthday B rabbit!!
-        </p>
-      </header>
-    </div>
+    <Router>
+      <AppHeader />
+      <Switch>
+        <Route component={About} path="/about"></Route>
+        <Route component={Home} path="/"></Route>
+        <Route component={Home} path="/photos"></Route>
+        <Route component={Home} path="/videos"></Route>
+      </Switch>
+    </Router>
   );
 }
 
