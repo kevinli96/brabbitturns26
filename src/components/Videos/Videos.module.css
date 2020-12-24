@@ -1,0 +1,24 @@
+.video {
+  max-width: 420px;
+}
+
+.videoContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 10rem;
+}
+
+.videoSubtitle {
+  margin-bottom: 0.8rem;
+  display: -webkit-box;
+  min-height: 75px;
+  max-height: 75px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.videoTitle {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
