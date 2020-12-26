@@ -1,0 +1,48 @@
+.container {
+  padding: 0 5rem;
+}
+
+.content {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.introHeader {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin-right: 5rem;
+}
+
+.introParagraph {
+  margin-bottom: 1rem;
+}
+
+.photo {
+  background-image: url("../../media/headshot.jpg");
+  background-position: 0% 50%;
+  background-size: cover;
+  border-radius: 8px;
+  height: 45rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .content {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .intro {
+    margin-right: 0;
+  }
+}

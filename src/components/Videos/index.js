@@ -1,5 +1,4 @@
 import { allVideos } from './constants';
-import globalStyles from '../../App.css';
 import React from 'react';
 import styles from './Videos.module.css';
 
@@ -20,6 +19,7 @@ export default function Videos() {
               frameBorder="0"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              title={title}
             ></iframe>
           </div>
         );

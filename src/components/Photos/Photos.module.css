@@ -1,0 +1,23 @@
+.photoContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  padding: 0 5rem;
+}
+
+.photo {
+  border-radius: 8px;
+  max-width: 420px;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .photoContainer {
+    padding: 0 2rem;
+  }
+
+  .photo {
+    max-width: 100%;
+  }
+}

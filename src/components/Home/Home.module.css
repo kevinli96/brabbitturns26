@@ -2,28 +2,51 @@
   background-image: url("../../media/lake.jpg");
   background-position: 0% 50%;
   background-size: cover;
+  border-radius: 8px;
   height: 40rem;
+  margin-top: 3rem;
   width: 100%;
 }
 
 .container {
-  padding: 2rem;
+  padding: 0 5rem;
 }
 
-.introHeader {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.intro {
-  font-size: 1.2rem;
+.modalContent {
   margin: auto;
   width: 60%;
+  text-align: center;
 }
 
-.introParagraph {
-  margin-bottom: 1rem;
+.title {
+  font-size: 4rem;
+  padding-top: 3rem;
+}
+
+.message {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+.title,
+.message {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .modalContent {
+    width: 80%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .message {
+    font-size: 1rem;
+  }
 }

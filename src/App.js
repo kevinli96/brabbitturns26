@@ -1,8 +1,8 @@
-import About from './components/Writings/index';
+import About from './components/About/index';
+import AppFooter from './components/AppFooter/index';
 import AppHeader from './components/AppHeader/index';
 import Home from './components/Home/index';
 import Photos from './components/Photos/index';
-import Writings from './components/Writings/index';
 import Videos from './components/Videos/index';
 import './App.css';
 
@@ -14,13 +14,14 @@ function App() {
       <div>
         <AppHeader />
         <Switch>
+          <Route component={About} exact path="/about" strict />
           <Route component={Photos} exact path="/photos" strict />
           <Route component={Videos} exact path="/videos" strict />
-          <Route component={Writings} exact path="/writings" strict />
           <Route path="/">
             <Home />
           </Route>
         </Switch>
+        <AppFooter />
       </div>
     </Router>
   );
