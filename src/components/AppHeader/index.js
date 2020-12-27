@@ -13,7 +13,6 @@ export default function AppHeader() {
 
   function isActive(page) {
     return (match, location) => {
-      console.log(location, page);
       return page === location.pathname;
     };
   }

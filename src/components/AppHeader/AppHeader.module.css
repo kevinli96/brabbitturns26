@@ -17,12 +17,6 @@
   display: flex;
 }
 
-/* RAY_DEEP: '#657786',
-  GRAY_MEDIUM: '#aab8c2',
-  GRAY_LIGHT: '#ccd6dd',
-  GRAY_FADED: '#e6ecf0',
-  GRAY_FAINT: '#f5f8fa', */
-
 .navLinkContainer {
   align-items: center;
 }
@@ -31,6 +25,10 @@
   font-weight: bold;
   margin-left: 2rem;
   text-decoration: none;
+}
+
+.navLink:hover {
+  border-bottom: 1px black solid;
 }
 
 .title,
