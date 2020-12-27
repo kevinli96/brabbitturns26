@@ -21,7 +21,7 @@ export default function About() {
             </li>
             <li>
               Esteemed Georgia Tech Master student and consultant for NASA to develop a concept of operations for
-              Vertical Takeoff and Landing aircrafts (before I crash landed my drone within 20 minutes of flight)
+              Vertical Takeoff and Landing aircrafts
             </li>
           </ul>
         </div>
