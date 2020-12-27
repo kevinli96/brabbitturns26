@@ -2,3 +2,10 @@
   min-height: 500px;
   padding: 0 5rem;
 }
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}

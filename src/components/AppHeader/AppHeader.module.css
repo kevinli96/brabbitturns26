@@ -44,4 +44,8 @@
   .mainHeader {
     padding: 0.8rem 2rem;
   }
+
+  .navLink {
+    margin-left: 1rem;
+  }
 }

@@ -5,8 +5,9 @@
 .blog {
   border-bottom: 1px #e6ecf0 solid;
   padding: 5rem 0;
-
   list-style-position: inside;
+  width: 60%;
+  margin: auto;
   text-align: center;
 }
 
@@ -37,6 +38,12 @@
 
   .blog {
     padding: 3rem 0;
+    width: 100%;
+  }
+
+  .blog ul,
+  .blog ol {
+    padding-left: 0;
   }
 
   .title {
