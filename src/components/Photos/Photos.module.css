@@ -1,8 +1,13 @@
+.photoContainer {
+  padding: 0 5rem;
+}
+
 .photoList {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   margin-top: 3rem;
+  padding-left: 0;
 }
 
 .photoListItem {
