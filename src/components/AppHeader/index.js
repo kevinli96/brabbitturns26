@@ -41,6 +41,14 @@ export default function AppHeader() {
         </NavLink>
         <NavLink
           activeClassName={styles.activeNavLink}
+          isActive={isActive('/blogs')}
+          className={styles.navLink}
+          to="/blogs"
+        >
+          Blogs
+        </NavLink>
+        <NavLink
+          activeClassName={styles.activeNavLink}
           isActive={isActive('/videos')}
           className={styles.navLink}
           to="/videos"

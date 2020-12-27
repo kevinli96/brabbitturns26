@@ -1,0 +1,46 @@
+.container {
+  padding: 0 10rem;
+}
+
+.blog {
+  border-bottom: 1px #e6ecf0 solid;
+  padding: 5rem 0;
+
+  list-style-position: inside;
+  text-align: center;
+}
+
+.blog div:last-child {
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: 3.4rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.cta {
+  border-bottom: 1px #2e7e6a solid;
+  color: #2e7e6a;
+  cursor: pointer;
+  font-style: italic;
+}
+
+.readMoreLink {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .blog {
+    padding: 3rem 0;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin: 0.5rem 0 1rem 0;
+  }
+}
