@@ -3,7 +3,7 @@
   color: white;
   display: flex;
   flex-shrink: 0;
-  margin-top: 3rem;
+  margin-top: auto;
   min-height: 4rem;
   padding-left: 5rem;
 }
