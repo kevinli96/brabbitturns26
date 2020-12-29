@@ -150,7 +150,7 @@ export const allBlogs = [
   {
     id: 9,
     date: '12/29/2020',
-    title: 'Happy birthday B!',
+    title: 'Hope you have a yinsane birthday!',
     content: (
       <div>
         <div>
@@ -167,7 +167,7 @@ export const allBlogs = [
   {
     id: 10,
     date: '12/29/2020',
-    title: 'Happy birthday Brandonnn!',
+    title: 'Happy birthday!',
     content: (
       <div>
         <div>
@@ -183,6 +183,20 @@ export const allBlogs = [
             width={40}
           />
         </div>
+      </div>
+    ),
+  },
+  {
+    id: 11,
+    date: '12/29/2020',
+    title: 'Happy birthday dude!',
+    content: (
+      <div>
+        <div>
+          Yooo happy birthday dude! Get litty like you just ate an edible after eating only a popeyes sandwich for the
+          day.
+        </div>
+        <div>- David</div>
       </div>
     ),
   },

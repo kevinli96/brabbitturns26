@@ -25,12 +25,8 @@
 }
 
 .photo {
-  background-image: url("../../media/headshot.jpg");
-  background-position: 0% 50%;
-  background-size: cover;
   border-radius: 8px;
   height: 45rem;
-  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -45,5 +41,9 @@
 
   .intro {
     margin-right: 0;
+  }
+
+  .photo {
+    height: 30rem;
   }
 }

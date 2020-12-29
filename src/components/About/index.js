@@ -1,3 +1,4 @@
+import headshot from '../../media/headshot.jpg';
 import React from 'react';
 import styles from './About.module.css';
 
@@ -61,7 +62,7 @@ export default function About() {
         <div className={styles.introHeader}>What’s up guys, it’s your boy B-Rabbit</div>
         <div className={styles.content}>
           {renderIntro()}
-          <div className={styles.photo}></div>
+          <img src={headshot} className={styles.photo} />
         </div>
       </div>
     </div>
