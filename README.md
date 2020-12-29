@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+## Development Guide
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Local development
 
-## Available Scripts
+Run `yarn && yarn start` from the repository's directory (`brabbitturns26`). This will compile the necessary packages and build the site locally. The site will be available at `localhost:3000`, any changes you make will only be reflected locally until you commit these changes, and push them to remote.
 
-In the project directory, you can run:
+### Pushing changes
 
-### `yarn start`
+1. `git pull`
+2. `git checkout -b <branch_name>`
+3. Make your local changes
+4. `git add -A`
+5. `git commit -m "commit message"`
+6. `git push origin <branch_name>`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Line by line:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- We must incorporate all the changes we made to the repository, so we must add the files with the (-A) argument denoting 'all' changes to our files.
+- We commit, or persist the files we added to the local version of the repository. Every commit requires a commit message, therefore the (-m) argument gives the 'commit' a commit message of the following text in quotes. This is up to the user to fill in, and is for documentation purposes. E.g. it could range anywhere from "replaced team 1 results pdf" to "small style change to home page"
+- Push the committed code to the master version. If there is an error denoting upstream branches, execute the full command ("git push -u origin master"). Otherwise, "git push" will suffice.
 
-### `yarn test`
+If at any point something unexpected comes up, CTRL+D or CTRL+C will terminate command execution and will return you to the command prompt.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The github repo is tied to a Heroku app, that auto deploys the website (https://brabbitturns26.herokuapp.com/) whenever Heroku detects a new commit in the main branch of the github repository. Therefore, `git push origin <branch_name>` or simply pushing to the main branch wil automatically deploy any changes you have made to the live site.
 
-### `yarn build`
+### Adding blog posts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In `src/components/Blogs/constants.js`, the `allBlogs` variable is defined as a list of objects, with corresponding `id`, `date`, `title`, and `content` keys. To create a new post:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Add a new object to the end of this list, incrementing `id` so that this new post has a unique id.
+2. Fill in the given date and title.
+3. Add content, which should be valid HTML syntax. You can reference existing content or https://www.learn-html.org/en/Basic_Elements
+4. Go to localhost:3000/blogs to see your newly added blog post
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Adding photos
 
-### `yarn eject`
+Various .jpg files live in `src/media/`, numbered currently from 1 to 51. The photos page is setup such that, (in `src/components/Photos/constants.js`, the code looks for .jpg files numbered from 1 to `MAX_PHOTO_NUMBER`. You can change `MAX_PHOTO_NUMBER` depending on which number, e.g. `51.jpg` you want to cut off at.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Adding vlogs
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In `src/components/Videos/constants.js`, the `allVideos` is a list of objects to which you will need to append objects to add vlogs. Add in another object, and fill in the title, subtitle, and src links. Note that you will need to take the youtube link by clicking 'Share' on the youtube video, going to the 'Embed' option, and copying the `src` attribute within the `iframe`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Tips
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Helpful Git Commands
 
-## Learn More
+```console
+git status
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+"git status" checks whether any files have been added or committed, and is a useful check to determine which git command you should run next.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```console
+git stash
+```
 
-### Code Splitting
+If you run into a merge conflict, or there files you have worked on whose changes you would like to discard, "git stash" will do this. It resets the state of your local repository to the last time you pushed to the master.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```console
+git pull
+```
 
-### Analyzing the Bundle Size
+Sometimes, you will need to incorporate changes made by another collaborator to your local codebase. "git pull" does exactly that, and takes all modified files from the master and syncs up the repository with your local. Be careful using this if you know that other collaborators have changed files that you are working on (or vice versa, if you begin working on files that others have modified).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Basic terminal commands
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855
