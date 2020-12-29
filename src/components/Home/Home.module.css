@@ -52,8 +52,14 @@
 
 @media only screen and (max-width: 600px) {
   .container {
-    min-height: 70rem;
+    min-height: 67rem;
     padding: 0 2rem;
+  }
+
+  .iframe {
+    margin-top: 7rem;
+    width: 400px;
+    height: 300px;
   }
 
   .modalContent {

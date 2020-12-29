@@ -6,7 +6,7 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.photo}>
         <div className={styles.modalContent}>
-          <div className={styles.title}>Happy 26th birthday Brandon!</div>
+          <div className={styles.title}>Happy 26th Birthday Brandon!</div>
           <div className={styles.messageContainer}>
             <div className={styles.message}>
               2020 isn’t what any of us thought it would be, and though we can’t celebrate with you in person, we wanted
